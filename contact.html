@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | In&Co</title>
+    <link rel="stylesheet" href="in-co.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">In&Co</div>
+        <nav id="main-nav">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="menu.html">Menü & Plaklar</a>
+            <a href="archive.html">Koleksiyonumuz</a>
+            <a href="contact.html" class="active">İletişim</a>
+            <button id="theme-toggle-btn" class="theme-btn">🌙 </button>
+        </nav>
+        
+    </header>
+
+    <main class="container">
+        <section class="contact-layout">
+            
+            
+            <div class="contact-info-panel">
+                <h1 class="section-title">TALK TO US.</h1>
+                <p>Masa rezervasyonu, albüm siparişleri veya dükkanda takas yapmak istediğiniz plaklar için formu kullanabilirsiniz.</p>
+                
+                <div class="shop-info-card">
+                    <h3>📍 ADRES</h3>
+                    <p>Beykoz Sahil Caddesi, No: 42 <br>Beykoz / İstanbul</p>
+                </div>
+                
+                <div class="shop-info-card">
+                    <h3>📞 İLETİŞİM NO</h3>
+                    <p>0501 000 80 237</p>
+                </div>
+            </div>
+
+            
+            <div class="contact-form-container">
+                <div id="error-message" class="alert-box"></div>
+
+                
+                <form id="coffee-contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="username">ADINIZ SOYADINIZ *</label>
+                        <input type="text" id="username" name="username" placeholder="Ahmet Yılmaz">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="useremail">E-POSTA ADRESİNİZ *</label>
+                        <input type="email" id="useremail" name="useremail" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userphone">TELEFON NUMARANIZ *</label>
+                        <input type="tel" id="userphone" name="userphone" placeholder="0501 000 80 23">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">İLETİŞİM AMACI *</label>
+                        <select id="subject" name="subject">
+                            <option value="">Seçiniz...</option>
+                            <option value="reservation">Pikap / Kulaklık Masası Rezervasyonu</option>
+                            <option value="exchange">Plak / CD Takas Başvurusu</option>
+                            <option value="order">Özel CD veya Plak Temini</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exchange-detail">TAKAS ETMEK İSTEDİĞİNİZ ALBÜM / SANATÇI ADI</label>
+                        <input type="text" id="exchange-detail" name="exchange-detail" placeholder="Örn: Nouvelle Vague - In a Manner of Speaking">
+                    </div>
+
+                    <div class="form-group-row">
+                        <label class="row-main-label">FAVORİ FORMATINIZ</label>
+                        <div class="radio-options">
+                            <label><input type="radio" name="format" value="cd"> Retro CD</label>
+                            <label><input type="radio" name="format" value="vinyl"> Vintage Plak</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">MESAJINIZ *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Buraya not bırakın..."></textarea>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <label><input type="checkbox" id="newsletter"> Takas günleri ve etkinliklerden e-posta ile haberdar olmak istiyorum.</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">MESAJI GÖNDER →</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 In&Co - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+   <script src="in-co.js"></script>
+</body>
+</html>
